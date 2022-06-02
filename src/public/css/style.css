@@ -1,0 +1,12 @@
+h1{
+    color: red;
+}
+
+button{
+    border-radius: 5px;
+}
+
+.form-style{
+    display: flex;
+    flex-direction: column;
+}
