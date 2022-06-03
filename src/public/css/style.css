@@ -10,3 +10,11 @@ button{
     display: flex;
     flex-direction: column;
 }
+
+.detail-user {
+    display: block;
+    margin-left: 400px;
+    text-align: center;
+    width: 300px;
+    background-color: aqua;
+}

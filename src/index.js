@@ -4,6 +4,9 @@ import router from './routers/home';
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 viewEngineConfig(app);
 
 router(app);

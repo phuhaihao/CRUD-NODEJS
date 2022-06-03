@@ -1,0 +1,17 @@
+<div>
+    <div class="row">
+        <form class="form-style" method="POST" action="/updated/user" style="display:flex; flex-direction: column; align-items: center">
+            <label for="">ID</label>   
+            <input type="text" name="id" value="<%= rows[0].id%>">
+            <label for="">Username</label>   
+            <input type="text" name="username" value="<%= rows[0].username%>">
+            <label for="">Password</label>   
+            <input type="text" name="password" value="<%= rows[0].password%>">
+            <label for="">Email</label>   
+            <input type="text" name="email" value="<%= rows[0].email%>">
+            <label for="">Phone</label>   
+            <input type="text" name="phone" value="<%= rows[0].phone%>">
+            <button type="submit" class="btn" style="border-radius: 5px">Update User</button>
+        </form>
+    </div>
+</div>
