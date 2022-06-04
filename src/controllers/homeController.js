@@ -1,6 +1,5 @@
 import pool from '../config/connectDB'
 
-
 const homeController = async (req, res) => {
     const [rows, fields] = await pool.execute("SELECT * FROM users");
     return res.render('home', {rows});
@@ -36,11 +35,30 @@ const deleteleUserController = async (req, res) => {
     return res.redirect('/');
 }
 
+const uploadFileController = async (req, res) => {
+    return res.render('uploadFile');
+}
+
+const uploadedFileController = async (req, res) => {
+    const files = req.files;
+    console.log(files);
+    return res.send(files);
+}
+
+const uploadedImgController = async (req, res) => {
+    const files = req.files;
+    console.log(files);
+    return res.send(files);
+}
+
 export {
     homeController, 
     detailUserController,
     createUserController,
     updateUserController,
     updatedUserController,
-    deleteleUserController
+    deleteleUserController,
+    uploadFileController,
+    uploadedFileController,
+    uploadedImgController
 }
